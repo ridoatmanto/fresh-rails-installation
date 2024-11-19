@@ -1,0 +1,37 @@
+development: &development
+  client:
+    region: <%= ENV['AWS_REGION'] %>
+    user_pool_id: <%= ENV['AWS_COGNITO_USER_POOL_CLIENT'] %>
+    bucket: <%= ENV['AWS_COGNITO_USER_BUCKET_CLIENT'] %>
+    picture_path: profile_picture/client
+    user_attributes:
+      - name
+      - email
+      - phone_number
+      - address
+      - birthdate
+      - picture
+      - gender
+      - given_name
+      - middle_name
+      - given_name
+      - nickname
+  admin:
+    region: <%= ENV['AWS_REGION'] %>
+    user_pool_id: <%= ENV['AWS_COGNITO_USER_POOL_ADMIN'] %>
+    bucket: <%= ENV['AWS_COGNITO_USER_BUCKET_ADMIN'] %>
+    picture_path: profile_picture/admin
+    user_attributes:
+      - name
+      - email
+      - phone_number
+      - address
+      - birthdate
+      - picture
+      - gender
+      - given_name
+      - middle_name
+      - given_name
+      - nickname
+production:
+  <<: *development

@@ -1,0 +1,15 @@
+development:
+  'localhost:5000': admin
+  'localhost:3000': client
+  'https://dlabstech.io': client
+  'dlabstech.io': client
+  'https://admin.dlabstech.io': admin
+  'admin.dlabstech.io': admin
+
+production:
+  'https://admin.odyssey.co.id': admin
+  'admin.odyssey.co.id': admin
+  'https://odyssey.co.id': client
+  'odyssey.co.id': client
+  'https://admin.dlabstech.io': admin
+  'admin.dlabstech.io': admin

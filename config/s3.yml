@@ -1,0 +1,6 @@
+development: &development
+  bucket: <%= ENV['AWS_S3_BUCKET'] %>
+  paths:
+    client_profile_picture: profile_picture
+production:
+  <<: *development

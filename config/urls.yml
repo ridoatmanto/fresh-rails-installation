@@ -1,0 +1,11 @@
+development:
+  - /product
+  - /product_group
+  - /item
+  - /order
+  - /user
+  - /client
+  - /resource
+  - /resource_type
+  - /position
+  - /occupation
